@@ -11,8 +11,30 @@ body {
   justify-content: center;
   //   height: 100vh;
   //   overflow: hidden;
+
   margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
 h1 {
   font-size: 36px;
   line-height: 1.16;
@@ -24,14 +46,22 @@ h1 {
 .background {
   display: flex;
   justify-content: center;
+
   align-items: center;
   flex-wrap: wrap;
   max-width: 600px;
 }
 
 .square {
-  width: 24px;
-  height: 24px;
+  font-size: 32px;
+  line-height: 1.16;
+  // display: flex;
+  text-align: center;
+  // align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  // background-color: blue;
 
   margin: 1px;
 }
@@ -42,6 +72,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: rgba(219, 207, 207, 0.377);
+  color: #000;
+  text-align: center;
   box-shadow: 2px 2px 5px rgba(198, 198, 198, 0.36);
 
   border-radius: 20px;
@@ -63,12 +95,15 @@ h1 {
 // }
 
 .item {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  line-height: 1.16;
+
   //   border: 1px solid #eee;
   //   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 50%;
-
+  // text-align: center;
   //   background: #f7f6f7;
   //   padding: 0.8rem 1rem;
   //   color: #828282;
@@ -76,9 +111,17 @@ h1 {
   //   text-align: center;
   cursor: grab;
 }
+
+.item-list {
+  margin-bottom: 10px;
+}
+
 .item1 {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  line-height: 1.16;
+  // margin-bottom: 10px;
 
   border-radius: 50%;
 
@@ -91,11 +134,11 @@ h1 {
 //   cursor: grabbing;
 // }
 
-.placeholder {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 8px;
-}
+// .placeholder {
+//   width: 24px;
+//   height: 24px;
+//   margin-bottom: 8px;
+// }
 
 // .start {
 //   background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
@@ -108,6 +151,10 @@ h1 {
 // .done {
 //   background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
 // }
+
+.dragItem--active {
+  opacity: 0.5;
+}
 
 .hold {
   border: 2px solid #7523df;

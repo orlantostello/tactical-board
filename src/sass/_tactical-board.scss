@@ -1,29 +1,4 @@
-.tactical-board {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  // background-color: #fff;
-  color: #fff;
-  // max-width: 960px;
-  // padding: 16px;
-}
-
-// .example code {
-//   font-family: monospace;
-//   font-size: 16px;
-//   font-weight: 700;
-//   background-color: #009688;
-//   color: #fff;
-//   padding: 2px 6px;
-//   border-radius: 2px;
-// }
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+.tactical {
   display: flex;
   justify-content: center;
 }
@@ -37,4 +12,106 @@
   background-image: url('../images/football-field.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.square {
+  font-size: 32px;
+  line-height: 1.16;
+  // display: flex;
+  text-align: center;
+  // align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  // background-color: blue;
+
+  margin: 1px;
+}
+.team {
+  height: 843px;
+  width: 100px;
+
+  background-color: rgba(219, 207, 207, 0.377);
+  color: #000;
+  text-align: center;
+  // box-shadow: 2px 2px 5px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+}
+
+.ball {
+  height: 75px;
+  width: 600px;
+  margin-top: 5px;
+
+  background-color: rgba(219, 207, 207, 0.377);
+  color: #000;
+  text-align: center;
+
+  border-radius: 20px;
+}
+
+.ballItem {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+
+  border-radius: 50%;
+
+  background-color: rgb(255, 255, 248);
+
+  cursor: grab;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 1.16;
+  margin-bottom: 4px;
+
+  border-radius: 50%;
+
+  background-color: rgb(248, 248, 8);
+
+  cursor: grab;
+}
+
+.item1 {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 1.16;
+  margin-bottom: 4px;
+
+  border-radius: 50%;
+
+  background-color: rgb(248, 8, 8);
+
+  cursor: grab;
+}
+
+// .item:active {
+//   cursor: grabbing;
+// }
+
+.placeholder {
+  height: 810px;
+  width: 100px;
+  // border: 2px solid #df2352;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dragItem--active {
+  opacity: 0.5;
 }
